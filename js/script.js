@@ -4,7 +4,6 @@ window.onload = function() {
     var page2 = document.getElementById("page2");
     var page3 = document.getElementById("page3");
     var lantern = document.getElementById("p1-lantern");
-    // var blessing = document.getElementById("p3-blessing");
 
     var music = document.getElementById("music");
     var audio = document.getElementsByTagName("audio")[0];
@@ -28,10 +27,10 @@ window.onload = function() {
     }, false);
 
     // 点击屏幕，开启好运2016
-    lantern.addEventListener("touchstart", function() {
+    lantern.addEventListener("click", function() {
         page1.style.display = "none";
+        page2.setAttribute("class", "page");
         page2.style.display = "block";
-
 
         setTimeout(function() {
             page3.style.display = "block";
