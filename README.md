@@ -1,6 +1,10 @@
 # 移动端H5画面制作新年贺卡（CSS3实现动画效果）
 web浏览请切换手机浏览模式[戳我在线浏览](https://yangpeijia.github.io/H5-happynewyear/)
 
+手机扫下面二维码可预览
+
+![二维码](https://github.com/yangpeijia/H5-happynewyear/blob/master/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+
 模仿慕课网相关课程制作，虽然只有三页，但用到了不少技能，自己也添加了一些功能上去。
 
 功能包括音乐播放与控制、灯笼闪烁、图标自动旋转、春联浮现动画、页面自动播放，页面切换转场效果（淡入淡出）、手指滑动切换页面等。
