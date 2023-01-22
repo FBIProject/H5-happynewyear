@@ -1,3 +1,5 @@
+import {firework} from './firework.js';
+
 window.onload = function() {
     // 获取元素
     var page1 = document.getElementById("page1");
@@ -7,6 +9,8 @@ window.onload = function() {
 
     var music = document.getElementById("music");
     var audio = document.getElementsByTagName("audio")[0];
+    let start_y;
+    let end_y;
 
     // 音乐播放完毕时，动画停止
     audio.addEventListener("ended", function(event) {
@@ -32,12 +36,12 @@ window.onload = function() {
         page2.setAttribute("class", "page");
         page2.style.display = "block";
 
-        setTimeout(function() {
-            page3.style.display = "block";
-            page3.style.top = "100%";
-            page2.setAttribute("class", "page fadeOut");
-            page3.setAttribute("class", "page fadeIn");
-        }, 5500)
+        // setTimeout(function() {
+        //     page3.style.display = "block";
+        //     page3.style.top = "100%";
+        //     page2.setAttribute("class", "page fadeOut");
+        //     page3.setAttribute("class", "page fadeIn");
+        // }, 5500)
     }, false)
 
     //手指滑动切换页面--第一页
@@ -104,4 +108,8 @@ window.onload = function() {
             }
         }
     }, false)
+
+    document.querySelector('.firework').addEventListener('click', function() {
+        firework({width: '100%', height: '100%'})
+    })
 }

@@ -1,0 +1,25 @@
+{
+  "name": "h5-happynewyear",
+  "version": "1.0.0",
+  "description": "web浏览请切换手机浏览模式[戳我在线浏览](https://yangpeijia.github.io/H5-happynewyear/)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FBIProject/H5-happynewyear.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FBIProject/H5-happynewyear/issues"
+  },
+  "homepage": "https://github.com/FBIProject/H5-happynewyear#readme",
+  "devDependencies": {
+    "vite": "^4.0.4"
+  }
+}
