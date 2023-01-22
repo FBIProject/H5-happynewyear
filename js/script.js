@@ -11,7 +11,7 @@ window.onload = function() {
     var audio = document.getElementsByTagName("audio")[0];
     let start_y;
     let end_y;
-
+let pageIndex = 1
     // 音乐播放完毕时，动画停止
     audio.addEventListener("ended", function(event) {
         music.setAttribute("class", "");
@@ -36,12 +36,13 @@ window.onload = function() {
         page2.setAttribute("class", "page");
         page2.style.display = "block";
 
-        // setTimeout(function() {
-        //     page3.style.display = "block";
-        //     page3.style.top = "100%";
-        //     page2.setAttribute("class", "page fadeOut");
-        //     page3.setAttribute("class", "page fadeIn");
-        // }, 5500)
+        setTimeout(() => {
+            if(pageIndex === 3) return;
+            page3.style.display = "block";
+            page3.style.top = "100%";
+            page2.setAttribute("class", "page fadeOut");
+            page3.setAttribute("class", "page fadeIn");
+        }, 7500)
     }, false)
 
     //手指滑动切换页面--第一页
@@ -81,6 +82,7 @@ window.onload = function() {
             if (delta_y < 0) { //下一页
                 page2.style.display = "none";
                 page3.style.display = "block";
+                pageIndex = 3
             } else { //上一页
                 page1.style.display = "block";
                 page2.style.display = "none";

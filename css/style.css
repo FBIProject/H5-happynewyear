@@ -166,15 +166,15 @@ body {
     }
 }
 
-#page1>.p1-imooc {
+#page1>.p1-footer {
     position: absolute;
     right: 0;
-    bottom: 9vh;
+    bottom: 12vh;
     left: 0;
-    background: url("../images/p1_imooc.png") no-repeat center center;
-    background-size: 100%;
-    width: 27.656vw;
-    height: 18.63vh;
+    background: url("../images/rabit.png") no-repeat center center;
+    background-size: cover;
+    width: 36vw;
+    height: 36vw;
     margin: auto;
 }
 
@@ -245,8 +245,8 @@ body {
     background-size: 100%;
     width: 59.375vw;
     height: 59.375vw;
-    -webkit-animation: p2_circle_outer 1s linear 3s infinite;
-    animation: p2_circle_outer 1s linear 3s infinite;
+    -webkit-animation: p2_circle_outer 1s linear 2s 5;
+    animation: p2_circle_outer 1s linear 2s 5;
 }
 
 @keyframes p2_circle_outer {
@@ -349,7 +349,7 @@ body {
     }
 }
 
-#page2>.p2-2016 {
+#page2>.p2-year {
     position: absolute;
     top: 0;
     right: 0;
@@ -360,9 +360,27 @@ body {
     /* background-size: 100%; */
     width: 27.5vw;
     height: 6.24vh;
+    line-height: 6.24vh;
+
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
+    padding: 2vw;
+    animation: twink 3s ease-in-out 0s infinite;
+}
+
+@keyframes twink {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+
+
 }
 
 
@@ -560,5 +578,19 @@ body {
 
 .firework {
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
+    border: 2px solid #fff;
+    width: 50vw;
+    height: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15vw;
+    position: absolute;
+    bottom: 1vh;
+    left: 25vw;
+    opacity: 0;
+    -webkit-animation: p3_first .5s linear .5s forwards;
+    animation: p3_first .5s linear .5s forwards;
+
 }
